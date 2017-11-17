@@ -1,0 +1,28 @@
+<html>
+
+<head>
+	
+</head>
+
+<body>
+
+<h3>String Checker</h3>
+	
+	<p id="demo"></p>
+
+	<script>
+		
+		function stringChecker(text) {
+			if (text === null || text === undefined || text.substring(0, 2) === "Py") {
+				return text;
+			} return "Py" + text;
+		}
+		
+		console.log(stringChecker("Python"));
+		console.log(stringChecker("thon"));
+		
+	</script>
+
+</body>
+
+</html>

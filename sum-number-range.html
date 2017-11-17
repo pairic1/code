@@ -1,0 +1,36 @@
+<html>
+
+<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<h3>Demo</h3>
+	
+	<p id="demo"></p>
+
+	<script>
+	
+		function sumAll(arr) {
+		    var lower = Math.min(arr[0], arr[1]);
+		    var higher = Math.max(arr[0], arr[1]);
+
+		    var total = 0;
+
+		    for (var i = lower; i <= higher; i++) {
+		        total += i;
+		    }
+
+		    return total;
+		}
+
+		console.log(sumAll([1, 4]));
+		
+	</script>
+
+</body>
+
+</html>

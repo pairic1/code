@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	
+</head>
+
+<body>
+
+<h3>Countdown to Christmas</h3>
+
+<p id="demo"></p>
+
+	<script>
+		
+		today = new Date();
+		var cmas = new Date(today.getFullYear(), 11, 25);
+		
+		if (today.getMonth() == 11 && today.getDate() > 25) {
+			cmas.setFullYear(cmas.getFullYear()+1); 
+		}
+		
+		var day = 1000 * 60 * 60 * 24;
+		document.getElementById("demo").innerHTML = Math.ceil((cmas.getTime() - today.getTime()) / 
+		(day)) + " days left until Christmas!";
+		
+	</script>
+
+</body>
+
+</html>

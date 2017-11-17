@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	
+</head>
+
+<body>
+
+<h3>Hey There</h3>
+
+	<p>What's your name?</p>
+	
+	<input id="name-input" placeholder="Name"></input>
+	
+	<button onclick="getName()" id="submit">Submit</button>
+	
+	<p id="demo"></p>
+
+	<script>
+		
+		function getName() {
+			var name = document.getElementById("name-input").value;
+			document.getElementById("demo").innerHTML = "Hey there, " + name + "!"
+		}
+		
+	</script>
+
+</body>
+
+</html>
