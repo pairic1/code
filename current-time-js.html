@@ -12,7 +12,6 @@
 	<p>Current time is: <span id="time"></span></p>
 
 	<script>
-		
 		today = new Date();
 		var day = today.getDay();
 		var days = ["Sunday", "Monday", "Tuesday", "Wednesday ","Thursday","Friday","Saturday"];
@@ -24,8 +23,7 @@
 		var prepand = (hour >= 12)? " PM" : " AM";
 		hour = (hour >=12)? hour-12 : hour;
 		
-		document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second + prepand;
-		
+		document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second + prepand;	
 	</script>
 
 </body>
